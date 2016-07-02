@@ -1,4 +1,4 @@
-package com.company;
+package com.bubble.test;
 
 import java.util.Random;
 
