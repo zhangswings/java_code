@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Main {
+public class BubbleArray {
 
     public static void main(String[] args) {
         int[] arr = constructDataArray(15);
