@@ -14,4 +14,9 @@ public class Singleton {
     public static Singleton getSingleton() {
         return singleton;
     }
+
+    //单例模式测试
+    public static void main(String[] args) {
+        Singleton.getSingleton();
+    }
 }
