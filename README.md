@@ -4,4 +4,5 @@ Java性能优化
 ###2.BinarySearch.java 针对int类型数组的二分查找算法
 ###3.Singleton.java 单例模式
 ###4.LazySingleton.java 延迟加载的单例模式代码
+###5.MainActivity.java查询获得历史轨迹后，可结合百度地图Android SDK绘制并展示轨迹。
 
