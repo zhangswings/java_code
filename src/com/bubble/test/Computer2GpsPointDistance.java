@@ -20,4 +20,45 @@ public class Computer2GpsPointDistance {
 //    07-08 10:17:47.678 27561-27561/baidumapsdk.demo E/MainActivity: onCreate: 百度-距离：740275.3203764297米
 //    07-08 10:17:47.678 27561-27561/baidumapsdk.demo E/MainActivity: onCreate: 谷歌-距离：740275.3203764297米
 
+
+
+    /**
+     * 计算两点坐标距离
+     *
+     * @return 返回单位为米
+     * @deprecated 直接使用系统的 Location.distanceBetween
+     */
+//    @Deprecated
+//    public static double distanceOfTwoPoint(final double lon1, final double lat1, final double lon2, final double lat2)
+//    {
+//        final double theta = lon1 - lon2;
+//        double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2))
+//                * Math.cos(deg2rad(theta));
+//        dist = Math.acos(dist);
+//        dist = rad2deg(dist);
+//        final double miles = dist * 60 * 1.1515;
+//        //英里转换米
+//        return miles * 1609.344;
+//    }
+
+    /**
+     * @deprecated 系统有自带的 Location.distanceTo
+     */
+//    @Deprecated
+//    public static double distanceOfTwoPoint(final Location mOriginalLocation, final Location mCurrentLocation)
+//    {
+//        return distanceOfTwoPoint(//
+//                mOriginalLocation.getLongitude(),//
+//                mOriginalLocation.getLatitude(), //
+//                mCurrentLocation.getLongitude(), //
+//                mCurrentLocation.getLatitude());
+//    }
+    /**
+     * 将弧度转换为角度
+     */
+    public static double rad2deg(final double radian)
+    {
+        return radian * 180 / Math.PI;
+    }
+
 }
